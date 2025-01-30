@@ -1,0 +1,225 @@
+<!-- Shift + ctrl + ! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 2</title>
+</head>
+
+<body>
+    <h1>HTML Lists</h1>
+    <h2>Ordered List - Course Name</h2>
+    <ol type="3" start="3" reversed>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li> 
+    </ol>
+    <ol type="A" start="26">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li> 
+    </ol>
+
+    <h2>Unordered List</h2>
+    <ul type="square">
+        <!-- square disc circle none -->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <h2>Definition List</h2>
+    <dl>
+        <dt>Phone</dt>
+        <dd>Phone is an electronic device.</dd>
+    </dl>
+
+    <!-- PRACTISE -->
+    <ol type="I">
+        <li>Routine in the Morning</li>
+        <ol type="i">
+
+            <li>Wake Up</li>
+            <li>Brush teeth</li>
+            <li>Go to college</li>
+        </ol>
+        <li>Important Things you carry in bag</li>
+        <ul type="square">
+            <li>Book</li>
+            <li>Laptop</li>
+            <li>Earpods</li>
+        </ul>
+        <li>Projects you have done till now</li>
+        <ol>
+            <li>Environmental Chemistry</li>
+            <ul type="circle">
+                <li>Website on AI role in Environment</li>
+                <li>Project on Environmental Conservation</li>
+            </ul>
+            <li>Engineering Physics</li>
+            <ul type="circle"> 
+                <li>Hand Written on Semiconductors</li>
+            </ul>
+        </ol>
+        <li>Subjects you are studying in this Sem</li>
+        <dl>
+            <dt>INT 219</dt>
+            <dd>Front End Development</dd>
+            <dt>INT 220</dt>
+            <dd>Server Side Scripting</dd>
+        </dl>
+    </ol>
+
+    <!-- TABLE START -->
+    <h1>Student Table</h1>
+    <table border="10" bgcolor="yellow" cellpadding="20" bordercolor="RED" background="strip.jpg">
+    <thead>
+        <tr>
+            <th rowspan="2">Roll No.</th>
+            <th colspan="2">Name</th>
+            <th rowspan="2">Subjects</th>
+            <th rowspan="2">Grade</th>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Aman</td>
+            <td>Kumar</td>
+            <td>C++</td>
+            <td>O</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ashish</td>
+            <td>Kumar</td>
+            <td>DSA</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ankita</td>
+            <td>Kumari</td>
+            <td>Networking</td>
+            <td>A</td>
+        </tr></tbody>
+    </table>
+
+    <table border="2">
+    <thead>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th>Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 am</td>
+            <td rowspan="2">5:00 pm</td>
+            <td>intro to XML</td>
+        </tr>
+        <tr>
+            <td>Validity DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 am</td>
+            <td>11.00 am</td>
+            <td>XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 am</td>
+            <td>2:00 pm</td>
+            <td rowspan="2">XSL Transfrmations</td>
+        </tr>
+        <tr>
+            <td>2:00 pm</td>
+            <td>5:00 pm</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 am</td>
+            <td>12:00 pm</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </thead>
+    </table><br> <br>
+
+    <!-- FORMS START -->
+     <!-- GET -> will show the filled entries on url  -->
+      <!-- to hide data use POST method  -->
+    <form action="" method="get">
+        <label for="uname">Enter Name</label>
+        <input type="text" name="uname" id="uname" size="30" maxlength="5" placeholder="Enter name" value="Ria">
+        <br><br>
+        <label for="pass">Enter Password</label>
+        <input type="password" name="pass" id="pass" placeholder="Password">
+        <br><br>
+        <label for="email">Enter Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter Email" required>
+        <br><br>
+        <label for="review">Write a Review</label>
+        <textarea name="review" id="review" rows="4" cols="6" placeholder="review"></textarea>
+        <br><br>
+                <!-- // DAY 3 -->
+                <label for="hobby">Choose your hobby</label> <br>
+                <input type="checkbox" id="hobby" value="dan">Dance <br>
+                <input type="checkbox" id="hobby" value="Jour" checked> Reading Journal<br>
+                <input type="checkbox" id="hobby" value="music"> Music <br>
+
+
+                <!-- Radio Button -->
+                <p>Select Gender</p>
+                <input type="radio" name="hobby" id="gender" value="M"> Male
+                <input type="radio" name="hobby" id="gender" value="F"> Female
+                <input type="radio" name="hobby" id="gender" value="T"> Transgender <br>
+                
+                <br>
+                <label for="pro">Choose Program</label>
+
+                <input type="radio" name="pro" id="btech" value="btech"> B Tech
+                <label for="btech">BTech</label>
+                <input type="radio" name="pro" id="bca" value="bca">  BCA
+                <label for="bca">BCA</label>
+                <input type="radio" name="pro" id="bb" value="BPT"> BPT <br>
+                <label for="bpt">BPT</label><br>
+                <br>
+                <label for="statesel">Select State</label>
+                <select name="statesel" id="statesel" size="3" multiple>
+                    <option value="null">Select State</option>
+                    <option value="pb">Punjab</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="Kr">Kerela</option>
+                    <option value="AP">Andhara Pradesh</option>
+                </select>
+        
+                <!-- Choose File --> <br><br>
+                <label for="file">Choose File</label>
+                <input type="file" name="filesel" id="filesel" accept="image/*">
+                <br><br>
+            <!-- use attribute  accept for selecting particular type of file -->
+
+        <!-- SUBMIT BUTTON --><br><br>
+        <input type="submit" name="submitform" id="submitform" value="Submit Form"> <br>
+        <input type="reset" name="reset" id="rest" value="RESET"><br>
+        <input type="image" name="imageesel" id="imagesel" src="submit.jpg" width="100" height="40">
+        <!-- default type of image is submit -->
+        
+    </form>
+</body>
+</html>
+
+

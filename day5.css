@@ -1,0 +1,46 @@
+body{
+    background-color: blanchedalmond;
+}
+.container{
+    background-color: goldenrod;
+    display: flex;
+    /* padding: 40px; */
+    /* align-items: flex-start; */
+    /* height: 100px; */
+    border: 10px solid green; 
+    /* justify-content: space-evenly; */
+    /* width: 700px; */
+    /* flex-direction: row-reverse; */
+    min-height: 400px; 
+     /*  we should use min Height  */
+    flex-wrap: nowrap;
+
+}
+.item{
+    border:2px solid darksalmon;
+    background-color: aqua;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    width:50px;
+    /* padding: 2px; */
+    /* text-align: center; */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#i1{
+    flex-shrink: 5;
+    align-self: center;
+    margin-top: 10;
+   
+}
+@media(max-width:500px){
+    .container{
+        flex-wrap:wrap;
+        background-color: green;
+    }
+}
+
+
+mediapa

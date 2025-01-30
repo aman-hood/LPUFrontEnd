@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 CSS</title>
+
+    <style>
+        /* ID */
+        p{
+            color:aqua ;
+            background-color: brown;
+        }
+        /* Attribute */
+        a[href="day1.html"]{
+            color: bisque;
+        }
+        /* id  */
+        #pid{
+            color: chartreuse;
+        }
+        /* class */
+        p.pc{
+            color:blue;
+            text-align: center;
+        }
+        /* universal*/
+        *{
+            background-color: blueviolet;
+        }
+        /* pseudo */
+        h1:hover{
+            color: brown;
+            /* border-radius: 0%; */
+            border: 2px solid chocolate;
+        }
+    </style>
+</head>
+<!-- CSS Priority  inline > internal, external-->
+<!-- internal & external -> depends on either we have included file latter or defined internal style (priority -> defined later greater prio)--> 
+<!-- types of css selector 
+ 1. type selector
+ 2. attribute selector
+ 3. id selector
+ 4. class selector
+ 5. universal selector
+ 6. pseudo selector 
+ 7. combination selector
+ -->
+<body>
+    <h1>Front End Class</h1>
+    <h2 style="color:aqua" id="id">Hello My ClassMates</h2>
+    <h3></h3>
+
+    <p>Hello meri Jaan</p>
+    <a href="day1.html">DAY 1</a><br>
+    <p>This is a Boring Class</p>
+    <!-- <p id="pid">Hi BRRO</p> -->
+    <p class="pc"> Hello meri ID</p>
+    <p id="pid" class="pc">Hello id and class</p>
+
+</body>
+</html>

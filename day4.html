@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 4</title>
+    <style>
+        .div{
+            /* border: 2px solid coral; */
+            border-color: green;
+            border-style: double;
+            border-width: 10px;
+            width: 400px;
+            height: 300px;
+            background-color: bisque;
+            font-family:cursive;
+       
+            padding: 30px;
+            color:brown;
+            border-radius: 50px;  
+            /* clockwise */
+            /* 50% bhi use kr skte h but jada round ho jayega*/
+            margin:auto;
+            /* margin: 50px; */
+            /* margin: top right bottom left; */
+            /* margin: top left/right bottom; */
+            margin: 100px 200px 400px;
+            /* margin: top/bottom right/left; */
+            padding:50px 150px;
+
+            border-top: 10px dotted red;
+            border-left: 6px dashed purple;
+            border-color: red green blue yellowgreen;
+        }
+    .container{
+        display: grid;
+        grid-template: 150px 150px / auto auto;
+        background-color: aqua;
+        border:10px red solid;
+        padding: 40px;
+        border-radius: 50px;
+
+        grid-column-gap: 10px;
+        grid-gap:30px 20px;
+
+        /* grid-area:row start / col start / row end / col end; */
+        grid-area: 3/2/span 1/2;
+    }
+    .item{
+        border-radius: 20px;
+        margin: 10px;
+        border:2px solid orange;
+        padding: 10px;
+        background-color: blueviolet;
+        display: grid;
+        /* grid-template-columns: auto auto 30%;
+        grid-template-rows: auto;
+         */
+        /* grid-template: 150px 100px ; */
+/* 
+        grid-row-start: ;
+        grid-row-end: ;
+        grid-gap: ; */
+    }
+    #i3{
+        grid-row-start: 4;
+        grid-row-end: span 3;
+        /* border-radius:1; */
+    }
+    /* hover */
+    .con{
+        border:2px hidden;
+        display: grid;
+        grid-template: 150px 150px / auto auto auto;
+        height: 100px;
+        width: 100px;
+    }
+    .itm{
+        border: solid coral;
+        height: 150;
+        width: 200;
+    }
+    #i1{
+        grid-column: span 3;
+    }
+    #i2{
+        grid-column: span 2;
+    }
+    </style>
+</head>
+<body>
+    <!-- CSS -->
+    <h1 style="color: aqua;visibility:hidden;">Hello World</h1>
+
+    <!-- CSS BOX MODEL 
+     1. border 
+     2. margin  -> space bw border and webpage
+     3. padding -> space bw content and border
+     4. content 
+     -->
+    <div class="div">Front End Web Developer Class</div>
+    
+    <!-- CSS GRIDS & FLEX 
+     
+    CSS Grids have gridContainer and gridItem -->
+    
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item" id="i3">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+
+    <div class="con">
+        <div class="itm" id="i1">Famous Tourism Places of India</div>
+        <div class="itm" id="i1"><img src="top.png" height="150" width="800"></div>
+        <div class="itm"><img src="india.jpg" height="120" width="200"></div>
+        <div class="itm"><img src="gateway.jpg" height="120" width="200"></div>
+        <div class="itm"><img src="Qutub-Minar.jpg" height="120" width="200"></div>
+        <div class="itm" id="i2"><img src="golden.jpg" height="120" width="400"></imp></div>
+        <div class="itm"></div>
+        <div class="itm" id="i1">Footer HU main</div>
+    </div>
+</body>
+</html>
