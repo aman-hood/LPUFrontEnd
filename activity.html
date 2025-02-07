@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+
+        }
+        header {
+            background-color: rgb(32, 188, 32);
+            color: white;
+            text-align: center;
+            padding:5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+            justify-content:flex-start;
+            flex-wrap: wrap;
+            margin: 40px 20px;
+            padding: 40px
+        }
+
+        .boxl {
+            background-color: white;
+            padding: 5px 20px;
+            margin: 10px;
+            margin-right: 100px;
+            width: 400px;
+            font-size: 14px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .boxr {
+            background-color: white;
+            padding: 5px 20px;
+            margin: 10px;
+            margin-left: 100px;
+            width: 400px;
+            font-size: 14px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: rgb(32, 188, 32);
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color:rgb(32, 188, 32);
+            text-decoration: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Website Task</h1>
+        <nav>
+            <a href="#about">Home</a>
+            <a href="#home">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="boxl">
+            <h3>About CSS</h3>
+            <p>Cascading Style sheets (CSS) allow you to style and layout your web pages, adding colors, spacing, and more.</p>
+        </div>
+        <div class="boxr">
+            <h3>Box Model</h3>
+            <p>The CSS box model describes the rectangular boxes generated for elements. It includes margins, borders, padding and the actual content.</p>
+        </div>
+        <div class="boxl">
+            <h3>Responsive Design</h3>
+            <p>Responsive design ensures your webpage looks great on all devices, from desktops to mobile phones.</p>
+        </div>
+    </div>
+
+    <footer>
+        Created by Aman Kumar | Follow us on
+        <a href="#">Instagram</a>| 
+        <a href="#">Twitter</a>| 
+        <a href="#">LinkedIn</a>
+    </footer>
+</body>
+</html>
